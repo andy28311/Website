@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>Database Controls - "One-to-many Possibilities"</title>
+<img src="white-space" size="100%">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="icon" href="Database-Controls-Logo.jpg" type="image/x-icon">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 23.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+body, html {
+    height: 100%;
+    font-family: "Times New Roman", Times, serif;
+}
+.error {color: #FF0000;}
+.bgimg {
+    background-position: center;
+    background-size: 20%;
+    background-image: white-space;
+    min-height: 40%;	
+}
+.menu {
+    display: none;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block  w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#services" class="w3-button w3-block w3-center w3-black">SERVICES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+	<div class="w3-col s3">
+      <a href="#contact/" class="w3-button w3-block w3-black">CONTACT US</a>
+    </div>
+  </div>
+</div>
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Database Controls - IT consulting and management</span>
+</div>
+<div class="w3-display-bottomright w3-bottomright w3-padding-large w3-hide-small">
+	<span class="w3-tag">(910) 273-5256 | andrew@databasecontrols.com</span>
+</div> 
+ <div class="w3-display-middle w3-center w3-padding w3-black">
+    <span class="w3-text-blue"  style="font-size:50px">Database Controls</span>
+</div>
+ 	
+</header>
+<!-- Add a background color and large text to the whole page -->
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+  <a href="https://www.youtube.com/user/andrewbartlett123" target="_blank">
+<img border="0" align="right" alt-text="Our YouTube" src="youtube.png" width="40" height="40">
+</a>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WHAT WE ARE</span></h5>
+	<img src="Database-Controls-Logo.jpg" style="width:200%; max-width:250px" class="center">
+	<hr style="height: 3px; border: none; color: #333; background-color: #333;" />
+	<p>At Database Controls we offer IT Consulting that includes Analytics and Database Management.  
+	Part of our goal is to assist by automating and streamlining the business forms you utilize through software programs such as:
+	Microsoft Access, Excel and FileMaker Pro.  We also provide specialized training that can either be one-on-one, 
+	through virtual conferencing, or through tailored training videos.  
+	Our approach to database management and business analytics will help you assess and improve how your company manages both 
+	its data and financial information.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"We offer a personal touch with our services and quality.  Your business is more than a number it is a person to us, and just like our motto we will offer "One-to-many possibilities"</i></p>
+      <p>-Andrew Bartlett - Owner and operator.</p>
+    </div>
+    <p><strong>Opening hours:</strong> Everyday from 9:00am to 5:00pm Eastern Central Time-zone.</p>
+  </div>
+</div>
+<hr/>
+<!-- Pricing Container -->
+<div class="w3-container w3-center w3-white" style="padding:100px 14px" id="services">
+  <h3>OUR SERVICES</h3>
+  <p class="w3-large">We offer the following types of services, please contact us for questions on services.</p>
+  <div class="row">
+  <div class="column">
+    <img src="Access.png" alt="Access" style="width:30%">
+	<p><strong>Microsoft Access design, training, and repairs.</p>
+  </div>
+  <div class="column">
+    <img src="Excel.png" alt="Excel" style="width:30%">
+	<p><strong>Microsoft Excel Analytics, Financial Forecasting, Training, and more.</p>
+  </div>
+  <div class="column">
+    <img src="FilemakerImg.jpg" alt="FileMaker" style="width:30%">
+	<p><strong>FileMaker Pro Design, Repairs and Training.</p>
+  </div>
+  <div class="column">
+    <img src="web.jpg" alt="Web" style="width:30%">
+	<p><strong>like what you see here?  Let us build your website!  We do custom work, however we do not host, just design and repairs.</p>
+  </div>
+</div>
+  <div class="w3-row-padding" style="margin-top:40px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-25">Access</li>
+        <li class="w3-padding-16">Design: $400 and up depending the need.</li>
+        <li class="w3-padding-16">Training: $15/ hour including remote training.</li>
+        <li class="w3-padding-16">DBMS Repair: Time and labor pricing may vary.</li>
+        <li class="w3-padding-16">Free Counsel: Our first consultation is free!</li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-25">Excel</li>
+        <li class="w3-padding-16">Financial management: $15 and up per hour depending on the business structure and need.</li>
+        <li class="w3-padding-16">Training: $15/ hour and up.</li>
+        <li class="w3-padding-16">Analytics and statistical reports: Reports start at $200 and up.</li>
+		<li class="w3-padding-16">Free Counsel: Our first consultation is free!</li>
+     </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-25">FileMaker Pro</li>
+		<li class="w3-padding-16">Same pricing and support as Access</li>
+        <li class="w3-padding-16">Design: $400 and up depending the need.</li>
+        <li class="w3-padding-16">Training: $15/ hour including remote training.</li>
+        <li class="w3-padding-16">DBMS Repair: Time and labor pricing may vary.</li>
+        <li class="w3-padding-16">Free Counsel: Our first consultation is free!</li>
+     </ul>
+    </div>
+   </div>
+ </div>
+</div>
+<!--Excel example video--->
+<h3 class="w3-center"><strong><u> TRAINING</u></strong></h3>
+<p class="w3-left">At Database Controls, we offer various training methods. 
+We can come to your place of business and offer hands on, or visual tutorials tailored to your business needs.  
+DB Controls offers training along with IT Consulting and Business Analysis so all your needs can be met.  
+Please let us know if there is a particular type of training that will help with your business.
+Check out a example of one of the videos we can teach you in MS Excel.  
+This video will show how to make a auto-fill using a formula called VLOOKUP.  Click on the video to watch the content:</p>
+<iframe  align="right"  width="350" height="250"  src="https://www.youtube.com/embed/kV4RcXU08Kw" frameborder="1px" allow="false"; encrypted-media" allowfullscreen></iframe>
+<!-- Contact/Area Container Map -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" text-align="center" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(35.047166, -78.878969),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5Xbtio-IrJbY-j2xn5k4JbzBIaeCFil0&callback=myMap"></script>
+    <p>Click on the map to find us, we are located in Fayetteville NC.</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service custom work, please send us a message with your inquiries.</p>
+</div>
+
+<!---Contact form--->
+<div class="w3-container" id="contact/" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-leftaligned w3-padding-48"><span class="w3-tag w3-wide">CONTACT US</span></h5>
+    <p>Please feel free to contact us at the information provided.</p>
+<form action="mailto:andrew@databasecontrols.com" method="post" enctype="text/plain">
+First Name:<br>
+<input type="text" name="First Name"><br>
+Last Name:<br>
+<input type="text" name="Last Name"><br>
+E-mail:<br>
+<input type="text" name="email mail" size="50"><br>
+Questions and comments:<br>
+<textarea rows="4" cols="50" name="comments">
+Enter your inquiries after this text: </textarea><br>
+Select Image File: <input type="file" name="img" multiple
+<input type="reset" value="Reset">
+<input type="submit"><br>
+</form> 
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-40 w3-medium">
+    <p>Powered by <a href="https://www.databasecontrols.com" title="Database Controls" target="_blank" class="w3-hover-text-blue">Database Controls</a></p>
+	<span class="w3-tag">(910) 273-5256 | <a href="mailto:andrew@databasecontrols.com" class="w3-hover-text-blue">andrew@databasecontrols.com</span>
+</div>    
+</footer>
+
+</body>
+</html>
